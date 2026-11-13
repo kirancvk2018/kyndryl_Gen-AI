@@ -1,0 +1,101 @@
+Timestamp,ServerID,AlertType,Severity,CPUUsage(%),MemoryUsage(%),DiskUsage(%),NetworkLatency(ms),ErrorMessage,Service,Status
+2026-07-26 01:56:03,SRV-CACHE-01,HighMemory,Medium,83,41,65,98,High error rate detected,Database,Resolved
+2026-07-26 02:06:03,SRV-WEB-01,HighMemory,Info,36,27,40,146,Database replication lag > 10s,WebServer,Resolved
+2026-07-26 02:16:03,SRV-DB-01,HighMemory,Low,18,23,55,118,Database replication lag > 10s,PaymentGateway,Resolved
+2026-07-26 02:26:03,SRV-WEB-02,NetworkLatency,Info,18,20,59,41,High error rate detected,PaymentGateway,Resolved
+2026-07-26 02:36:03,SRV-DB-02,HighMemory,High,37,32,79,93,Disk space below 5%,Monitoring,Escalated
+2026-07-26 02:46:03,SRV-DB-01,ServiceDown,Info,45,50,55,86,Out of memory exception,Monitoring,InProgress
+2026-07-26 02:56:03,SRV-WEB-02,DiskSpace,Info,65,37,55,33,API response time > 5s,Database,Escalated
+2026-07-26 03:06:03,SRV-APP-02,HighMemory,High,25,32,83,93,SSL certificate expiration warning,Authentication,Escalated
+2026-07-26 03:16:03,SRV-APP-02,ConnectionPool,Low,69,22,44,42,Connection timeout to database,API,Resolved
+2026-07-26 03:26:03,SRV-CACHE-01,HighCPU,Medium,26,65,43,67,Connection timeout to database,PaymentGateway,Unresolved
+2026-07-26 03:36:03,SRV-CACHE-01,HighCPU,Low,43,85,91,44,Connection pool exhausted,LoadBalancer,Escalated
+2026-07-26 03:46:03,SRV-DB-01,ServiceDown,Critical,92,66,65,126,Disk space below 5%,WebServer,Resolved
+2026-07-26 03:56:03,SRV-APP-02,NetworkLatency,Low,84,60,50,145,High error rate detected,PaymentGateway,InProgress
+2026-07-26 04:06:03,SRV-DB-02,NetworkLatency,Critical,16,50,47,119,Connection timeout to database,API,Unresolved
+2026-07-26 04:16:03,SRV-APP-01,NetworkLatency,Critical,94,86,56,57,Cache miss rate > 30%,API,Escalated
+2026-07-26 04:26:03,SRV-APP-02,ErrorRate,Low,52,45,46,46,Disk space below 5%,Monitoring,InProgress
+2026-07-26 04:36:03,SRV-APP-02,ServiceDown,Info,27,26,40,149,Connection pool exhausted,PaymentGateway,InProgress
+2026-07-26 04:46:03,SRV-APP-01,ResponseTime,High,39,51,49,39,Service failed to start,Authentication,Resolved
+2026-07-26 04:56:03,SRV-WEB-01,NetworkLatency,Critical,32,67,87,142,Database replication lag > 10s,Monitoring,Resolved
+2026-07-26 05:06:03,SRV-DB-02,NetworkLatency,Medium,61,79,62,14,Out of memory exception,PaymentGateway,Escalated
+2026-07-26 05:16:03,SRV-DB-02,ServiceDown,Medium,78,27,84,49,Connection timeout to database,Monitoring,InProgress
+2026-07-26 05:26:03,SRV-WEB-01,HighCPU,Low,63,67,63,26,Connection pool exhausted,LoadBalancer,Escalated
+2026-07-26 05:36:03,SRV-DB-01,ResponseTime,Info,36,37,92,14,High error rate detected,LoadBalancer,Escalated
+2026-07-26 05:46:03,SRV-CACHE-01,DiskSpace,Low,32,29,89,67,Database replication lag > 10s,Monitoring,Unresolved
+2026-07-26 05:56:03,SRV-WEB-01,HighMemory,Medium,54,36,87,19,High error rate detected,Authentication,Resolved
+2026-07-26 06:06:03,SRV-APP-02,HighCPU,Medium,61,36,61,59,Disk space below 5%,Monitoring,Escalated
+2026-07-26 06:16:03,SRV-APP-02,ErrorRate,Info,51,86,68,63,SSL certificate expiration warning,Authentication,Escalated
+2026-07-26 06:26:03,SRV-CACHE-01,HighMemory,Low,26,29,77,145,SSL certificate expiration warning,API,Unresolved
+2026-07-26 06:36:03,SRV-APP-01,ServiceDown,Info,40,31,44,46,Network packet loss > 2%,WebServer,Unresolved
+2026-07-26 06:46:03,SRV-APP-01,ServiceDown,High,25,85,61,64,Cache miss rate > 30%,WebServer,Resolved
+2026-07-26 06:56:03,SRV-WEB-02,HighCPU,Info,71,41,88,72,Disk space below 5%,LoadBalancer,Resolved
+2026-07-26 07:06:03,SRV-DB-01,DiskSpace,High,78,45,41,124,Connection pool exhausted,PaymentGateway,Escalated
+2026-07-26 07:16:03,SRV-WEB-02,ConnectionPool,Medium,32,87,74,7,Connection pool exhausted,Database,Escalated
+2026-07-26 07:26:03,SRV-WEB-01,DiskSpace,Info,92,65,82,37,Service failed to start,LoadBalancer,InProgress
+2026-07-26 07:36:03,SRV-DB-02,ServiceDown,Medium,38,41,73,36,Database replication lag > 10s,WebServer,Escalated
+2026-07-26 07:46:03,SRV-WEB-01,DiskSpace,Critical,55,31,50,20,Out of memory exception,Authentication,Unresolved
+2026-07-26 07:56:03,SRV-WEB-02,DiskSpace,Info,51,31,62,15,API response time > 5s,API,InProgress
+2026-07-26 08:06:03,SRV-APP-02,HighCPU,Info,77,52,90,29,Network packet loss > 2%,API,InProgress
+2026-07-26 08:16:03,SRV-WEB-01,DiskSpace,Medium,59,83,68,82,Network packet loss > 2%,API,Unresolved
+2026-07-26 08:26:03,SRV-DB-01,ResponseTime,High,87,56,86,100,Database replication lag > 10s,Authentication,Escalated
+2026-07-26 08:36:03,SRV-CACHE-01,DiskSpace,High,72,39,85,46,Connection pool exhausted,WebServer,Resolved
+2026-07-26 08:46:03,SRV-WEB-02,ResponseTime,High,64,63,78,121,API response time > 5s,LoadBalancer,Unresolved
+2026-07-26 08:56:03,SRV-MONITOR-01,ServiceDown,Low,84,83,60,66,Cache miss rate > 30%,Cache,Unresolved
+2026-07-26 09:06:03,SRV-MONITOR-01,ServiceDown,Low,67,49,77,35,Load balancer health check failed,Cache,Escalated
+2026-07-26 09:16:03,SRV-DB-01,ErrorRate,High,49,47,77,116,Service failed to start,Database,InProgress
+2026-07-26 09:26:03,SRV-DB-01,ConnectionPool,Low,80,86,65,45,SSL certificate expiration warning,PaymentGateway,InProgress
+2026-07-26 09:36:03,SRV-WEB-01,ResponseTime,Medium,54,32,89,142,SSL certificate expiration warning,WebServer,InProgress
+2026-07-26 09:46:03,SRV-WEB-01,ServiceDown,High,82,49,91,95,Database replication lag > 10s,WebServer,Escalated
+2026-07-26 09:56:03,SRV-APP-01,HighMemory,Info,87,23,67,140,Service failed to start,Cache,Escalated
+2026-07-26 10:06:03,SRV-WEB-01,HighMemory,Low,81,61,57,81,High error rate detected,Database,InProgress
+2026-07-26 10:16:03,SRV-CACHE-01,ServiceDown,Critical,87,74,54,112,Connection timeout to database,API,InProgress
+2026-07-26 10:26:03,SRV-APP-02,ErrorRate,Critical,38,56,82,77,Database replication lag > 10s,PaymentGateway,Escalated
+2026-07-26 10:36:03,SRV-APP-02,ErrorRate,Critical,66,21,67,84,High error rate detected,WebServer,Resolved
+2026-07-26 10:46:03,SRV-DB-01,HighMemory,Info,19,25,69,47,High error rate detected,API,Resolved
+2026-07-26 10:56:03,SRV-WEB-01,HighCPU,Critical,78,52,50,81,API response time > 5s,API,Escalated
+2026-07-26 11:06:03,SRV-DB-02,HighMemory,Medium,49,65,74,148,Out of memory exception,Cache,Resolved
+2026-07-26 11:16:03,SRV-WEB-01,NetworkLatency,High,29,29,72,111,Connection timeout to database,Authentication,Resolved
+2026-07-26 11:26:03,SRV-MONITOR-01,NetworkLatency,Medium,90,24,48,99,Connection timeout to database,LoadBalancer,Escalated
+2026-07-26 11:36:03,SRV-WEB-02,ErrorRate,Critical,41,44,68,126,Cache miss rate > 30%,LoadBalancer,InProgress
+2026-07-26 11:46:03,SRV-DB-02,DiskSpace,Critical,54,21,66,10,Cache miss rate > 30%,PaymentGateway,Unresolved
+2026-07-26 11:56:03,SRV-DB-01,ResponseTime,Info,28,66,44,86,Connection timeout to database,Authentication,Unresolved
+2026-07-26 12:06:03,SRV-APP-02,NetworkLatency,Medium,74,29,81,24,Load balancer health check failed,Cache,Resolved
+2026-07-26 12:16:03,SRV-DB-02,HighCPU,Info,42,65,92,32,API response time > 5s,API,Unresolved
+2026-07-26 12:26:03,SRV-MONITOR-01,HighCPU,Info,52,34,43,41,Cache miss rate > 30%,PaymentGateway,Unresolved
+2026-07-26 12:36:03,SRV-DB-02,HighMemory,Medium,52,46,89,85,Connection timeout to database,Cache,Unresolved
+2026-07-26 12:46:03,SRV-APP-02,ErrorRate,Medium,46,68,40,113,Disk space below 5%,Authentication,Resolved
+2026-07-26 12:56:03,SRV-DB-01,DiskSpace,Info,46,21,66,58,Load balancer health check failed,API,Escalated
+2026-07-26 13:06:03,SRV-APP-02,ErrorRate,Medium,20,61,84,8,Connection pool exhausted,PaymentGateway,Unresolved
+2026-07-26 13:16:03,SRV-WEB-02,ConnectionPool,High,16,67,84,15,Database replication lag > 10s,LoadBalancer,Escalated
+2026-07-26 13:26:03,SRV-APP-01,ErrorRate,Info,95,43,80,42,Cache miss rate > 30%,Cache,InProgress
+2026-07-26 13:36:03,SRV-CACHE-01,ErrorRate,Medium,15,52,89,104,Out of memory exception,Authentication,InProgress
+2026-07-26 13:46:03,SRV-APP-01,ServiceDown,High,50,76,71,36,SSL certificate expiration warning,Authentication,Escalated
+2026-07-26 13:56:03,SRV-CACHE-01,ErrorRate,Info,88,62,42,127,API response time > 5s,WebServer,Unresolved
+2026-07-26 14:06:03,SRV-APP-02,DiskSpace,Medium,85,74,72,60,Connection pool exhausted,Monitoring,InProgress
+2026-07-26 14:16:03,SRV-MONITOR-01,NetworkLatency,Medium,31,62,91,50,Connection timeout to database,WebServer,Escalated
+2026-07-26 14:26:03,SRV-CACHE-01,HighCPU,Medium,31,42,50,5,SSL certificate expiration warning,Cache,InProgress
+2026-07-26 14:36:03,SRV-DB-01,ServiceDown,Critical,78,74,42,24,Out of memory exception,Database,Unresolved
+2026-07-26 14:46:03,SRV-DB-01,HighCPU,Critical,83,34,79,108,High error rate detected,WebServer,InProgress
+2026-07-26 14:56:03,SRV-MONITOR-01,ConnectionPool,Critical,33,80,61,44,High error rate detected,Cache,Resolved
+2026-07-26 15:06:03,SRV-DB-02,ConnectionPool,Low,40,84,88,40,Load balancer health check failed,Database,Unresolved
+2026-07-26 15:16:03,SRV-WEB-01,ErrorRate,Low,19,49,41,60,Database replication lag > 10s,API,Resolved
+2026-07-26 15:26:03,SRV-APP-02,ResponseTime,High,31,21,79,11,Out of memory exception,Authentication,Escalated
+2026-07-26 15:36:03,SRV-DB-02,ConnectionPool,High,42,86,55,46,Connection timeout to database,PaymentGateway,Unresolved
+2026-07-26 15:46:03,SRV-APP-01,DiskSpace,Critical,59,80,64,98,Connection timeout to database,Cache,InProgress
+2026-07-26 15:56:03,SRV-WEB-01,NetworkLatency,Low,79,51,82,51,Load balancer health check failed,WebServer,Resolved
+2026-07-26 16:06:03,SRV-WEB-01,NetworkLatency,High,39,87,65,11,SSL certificate expiration warning,WebServer,InProgress
+2026-07-26 16:16:03,SRV-CACHE-01,DiskSpace,Critical,40,24,63,42,Out of memory exception,Database,InProgress
+2026-07-26 16:26:03,SRV-APP-01,HighMemory,High,64,43,77,90,Connection timeout to database,API,Resolved
+2026-07-26 16:36:03,SRV-DB-01,DiskSpace,Info,18,63,41,108,Database replication lag > 10s,LoadBalancer,InProgress
+2026-07-26 16:46:03,SRV-MONITOR-01,ErrorRate,Medium,30,27,41,24,Database replication lag > 10s,API,Unresolved
+2026-07-26 16:56:03,SRV-WEB-01,HighMemory,Info,88,31,63,87,Connection pool exhausted,LoadBalancer,Escalated
+2026-07-26 17:06:03,SRV-DB-02,ResponseTime,Low,38,44,65,26,Disk space below 5%,Cache,Resolved
+2026-07-26 17:16:03,SRV-CACHE-01,DiskSpace,Low,77,88,45,45,Load balancer health check failed,Database,Unresolved
+2026-07-26 17:26:03,SRV-APP-02,HighCPU,Critical,32,23,71,27,Service failed to start,Authentication,Escalated
+2026-07-26 17:36:03,SRV-DB-01,NetworkLatency,Medium,77,31,75,30,Connection pool exhausted,API,Resolved
+2026-07-26 17:46:03,SRV-DB-01,DiskSpace,Low,52,47,78,70,Connection timeout to database,Cache,InProgress
+2026-07-26 17:56:03,SRV-MONITOR-01,ErrorRate,Critical,21,54,91,135,Network packet loss > 2%,WebServer,Unresolved
+2026-07-26 18:06:03,SRV-WEB-01,HighMemory,Medium,86,84,87,95,Load balancer health check failed,Authentication,InProgress
+2026-07-26 18:16:03,SRV-WEB-01,ConnectionPool,High,33,35,62,20,Out of memory exception,Database,Resolved
+2026-07-26 18:26:03,SRV-DB-02,ErrorRate,High,25,43,71,130,Network packet loss > 2%,Authentication,Unresolved

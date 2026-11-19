@@ -1,0 +1,31 @@
+Prompt ID,Scenario,Version Number,Prompt Name,Prompt Text,Business Objective,Created Date,Version Description
+INC-V1,Incident Summarization,1,Basic summary,Summarize this incident for me.,"Generate a concise, accurate incident summary containing: incident description, business impact, timeline, actions taken, current status and pending investigation.",2026-11-17,"V1 - Basic prompt with no role, context, rules or output format."
+INC-V2,Incident Summarization,2,Role-based update,"You are an IT operations analyst writing an incident update for the operations manager. Read the incident details below and write a short summary. Include what happened, how it affected users, and what has been done so far.","Generate a concise, accurate incident summary containing: incident description, business impact, timeline, actions taken, current status and pending investigation.",2026-11-17,"V2 - Adds a role and audience context, but no explicit output structure."
+INC-V3,Incident Summarization,3,Structured incident report,"You are an IT operations analyst. Using ONLY the information in the business input, write an incident summary with exactly these sections, in this order:
+1. Incident description (2-3 sentences)
+2. Business impact (who was affected and how)
+3. Timeline (bulleted list with the times stated in the input)
+4. Actions taken (bulleted list)
+5. Current status (one sentence)
+6. Pending investigation (bulleted list)
+Rules: Do not add any cause, number or fact that is not in the input. If something is unknown, write 'Not stated in input'. Keep the total length under 250 words.","Generate a concise, accurate incident summary containing: incident description, business impact, timeline, actions taken, current status and pending investigation.",2026-11-17,"V3 - Explicit sections, order, grounding rules and a length limit."
+TKT-V1,Ticket Classification,1,Basic classification,Classify this IT ticket.,"Classify the ticket by category, priority, business impact, assignment group and recommended next action.",2026-11-17,"V1 - Basic prompt with no role, context, rules or output format."
+TKT-V2,Ticket Classification,2,Role-based classification,"You are an IT service desk specialist. Read the ticket below and classify it. Give the category, priority, business impact, assignment group and the next action you recommend.","Classify the ticket by category, priority, business impact, assignment group and recommended next action.",2026-11-17,"V2 - Adds a role and the fields to decide, but no fixed template."
+TKT-V3,Ticket Classification,3,Structured service desk template,"You are an IT service desk specialist. Classify the ticket using ONLY the information in the business input. Return the answer in this format:
+Category:
+Priority: (P1 Critical / P2 High / P3 Medium / P4 Low)
+Business impact: (number of users, departments, business effect)
+Assignment group:
+Recommended next action:
+Justification for priority: (one or two sentences that refer to the input)
+Rules: Do not invent facts. Choose one value for each field. Keep the answer under 150 words.","Classify the ticket by category, priority, business impact, assignment group and recommended next action.",2026-11-17,"V3 - Fixed template, priority scale, grounding rules and a length limit."
+SOP-V1,SOP Generation,1,Basic SOP,Write an SOP for this alert.,"Generate an operational SOP with purpose, scope, preconditions, step-by-step procedure, escalation conditions and a validation checklist.",2026-11-17,"V1 - Basic prompt with no role, context, rules or output format."
+SOP-V2,SOP Generation,2,Role-based SOP,"You are an experienced operations engineer. Write a standard operating procedure (SOP) for handling the situation described below, so that a new engineer can follow it. Cover the purpose, scope, steps and when to escalate.","Generate an operational SOP with purpose, scope, preconditions, step-by-step procedure, escalation conditions and a validation checklist.",2026-11-17,"V2 - Adds a role and the topics to cover, but no fixed section layout."
+SOP-V3,SOP Generation,3,Structured SOP template,"You are an experienced operations engineer. Write an SOP using ONLY the information in the business input. Use exactly these six numbered sections:
+1. Purpose
+2. Scope
+3. Preconditions (bulleted list)
+4. Step-by-step procedure (numbered list, low-risk steps first)
+5. Escalation conditions (bulleted list)
+6. Validation checklist (checkbox list)
+Rules: Do not invent application names or facts that are not in the input. Keep it under 350 words.","Generate an operational SOP with purpose, scope, preconditions, step-by-step procedure, escalation conditions and a validation checklist.",2026-11-17,"V3 - Six fixed sections, safety order for steps and a length limit."

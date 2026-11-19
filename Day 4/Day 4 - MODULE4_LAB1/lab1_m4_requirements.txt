@@ -1,0 +1,7 @@
+# Module 4, Lab 1: Text-to-Speech Assistant for IT Infrastructure
+# Install with:  pip install -r lab1_m4_requirements.txt
+
+openai>=1.0.0          # OpenAI Python SDK, used to call the Text-to-Speech API
+python-dotenv          # Optional: loads OPENAI_API_KEY from a local .env file
+ipython                # Audio players inside the notebook (IPython.display)
+jupyter                # Runs the notebook (Jupyter Notebook)

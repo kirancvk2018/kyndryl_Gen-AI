@@ -1,0 +1,91 @@
+================================================================================
+MODULE 6, LAB 1: LANGCHAIN BASICS (CORPORATE OPERATIONS) - DELIVERY SUMMARY
+================================================================================
+
+PROJECT: Simple LLM App for Routine Corporate Operations
+VERSION: 2.0
+
+================================================================================
+WHAT CHANGED IN VERSION 2.0
+================================================================================
+
+- Use case: IT incident examples replaced with routine corporate operations
+  (shift handovers, helpdesk ticket triage, meeting action items, status emails).
+- Code: plain functions only. No classes and no Pydantic models.
+- Requirements: pydantic removed. LangChain versions are unchanged
+  (langchain>=1.0.0, langchain-openai>=1.0.0).
+- Model: gpt-4o-mini (default in code and in the .env template).
+- Settings: the notebook reads OPENAI_MODEL, LLM_TEMPERATURE and MAX_TOKENS
+  from .env, so the documentation and the code agree.
+- Sample data: data/sample_tickets.json, data/sample_shift_notes.txt and
+  data/sample_meeting_notes.txt replace the IT incident, alert and log samples.
+
+================================================================================
+PACKAGE CONTENTS
+================================================================================
+
+Notebook
+  module6_lab1_langchain_basics.ipynb
+    12 sections, 15 code cells, saved with a real run of the lab
+
+Configuration
+  lab1_m6_requirements.txt   (4 packages)
+  .env                       (your key and settings)
+  .env_lab1_m6_example       (settings template)
+
+Sample data
+  data/sample_tickets.json        (8 tickets)
+  data/sample_shift_notes.txt     (night-shift handover)
+  data/sample_meeting_notes.txt   (weekly operations meeting)
+
+Documentation
+  MODULE6_LAB1_README.md
+  LAB1_M6_QUICKSTART.md
+  LAB1_M6_MANIFEST.txt
+  MODULE6_LAB1_DELIVERY_SUMMARY.txt (this file)
+
+================================================================================
+WHAT TRAINEES BUILD
+================================================================================
+
+1. Shift handover summary (one chain step, then a multi-step chain)
+2. Ticket triage: each ticket gets a team, a priority and a reason (JSON)
+3. Meeting status email (Section 8 exercise)
+4. Batch triage with a saved results file: output/ticket_triage.json
+
+================================================================================
+LEARNING OUTCOMES
+================================================================================
+
+Understanding
+  - Explain the prompt | llm | parser pattern
+  - Describe the role of a prompt template
+  - Explain why output parsing needs a fallback
+
+Skills
+  - Start a chat model with settings from .env
+  - Write prompt templates for office tasks
+  - Build single-step and multi-step chains
+  - Parse JSON output and handle replies that do not parse
+  - Process a batch of tickets and save the results
+
+================================================================================
+REQUIREMENTS
+================================================================================
+
+  Python 3.10 or higher
+  An OpenAI API key
+  About 2-3 hours
+  Estimated AI cost: a few cents (gpt-4o-mini)
+
+================================================================================
+NOTES FOR FACILITATORS
+================================================================================
+
+  - Check the .env key line first when a trainee reports an error.
+  - Section 8 is the main exercise.
+  - Use sample data only. Remind trainees not to paste real records.
+
+================================================================================
+END OF DELIVERY SUMMARY
+================================================================================

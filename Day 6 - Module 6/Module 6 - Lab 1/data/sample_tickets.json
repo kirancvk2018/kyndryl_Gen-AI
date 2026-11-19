@@ -1,0 +1,12 @@
+{
+  "tickets": [
+    {"id": "TKT-101", "text": "I am locked out of my account after the weekend. Please reset my password."},
+    {"id": "TKT-102", "text": "Air conditioning on the 3rd floor is not working and the room is too hot."},
+    {"id": "TKT-103", "text": "Please update my employee record with my new home address."},
+    {"id": "TKT-104", "text": "My expense report for a client dinner was rejected. I need to know why."},
+    {"id": "TKT-105", "text": "My laptop battery is swelling and the trackpad is lifting. Needs replacement urgently."},
+    {"id": "TKT-106", "text": "The supply cabinet on floor 2 is empty. We need printer paper and toner."},
+    {"id": "TKT-107", "text": "New hire starts Monday. Please set up a laptop and badge before 9 AM."},
+    {"id": "TKT-108", "text": "Vendor invoice INV-4481 is past due. Please check the payment status."}
+  ]
+}

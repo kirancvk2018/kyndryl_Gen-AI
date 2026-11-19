@@ -1,0 +1,44 @@
+{
+  "requests": [
+    {
+      "request_id": "OPS-101",
+      "request_type": "Office supplies restock",
+      "requester": "Priya Nair",
+      "department": "Finance",
+      "details": "Floor 4 supply cabinet is out of printer paper, toner and sticky notes. Team has been borrowing supplies from other floors for two days.",
+      "due_date": "2026-11-18"
+    },
+    {
+      "request_id": "OPS-102",
+      "request_type": "Building access badge",
+      "requester": "Daniel Osei",
+      "department": "Procurement",
+      "details": "New contractor starts Monday and needs a building access badge for Floor 2. Manager approval was sent yesterday but the badge office has not confirmed receipt.",
+      "due_date": "2026-11-16"
+    },
+    {
+      "request_id": "OPS-103",
+      "request_type": "Equipment repair",
+      "requester": "Mei Lin Tan",
+      "department": "Sales",
+      "details": "Third-floor shared multifunction printer jams on every scan-to-email job. Sales proposals are being printed on the second floor instead.",
+      "due_date": "2026-11-20"
+    },
+    {
+      "request_id": "OPS-104",
+      "request_type": "Vendor invoice exception",
+      "requester": "Carlos Mendes",
+      "department": "Facilities",
+      "details": "Monthly cleaning contractor invoice for October is marked as a duplicate by accounts payable. Contractor has sent two reminders and threatened to pause service until payment is confirmed.",
+      "due_date": "2026-11-17"
+    },
+    {
+      "request_id": "OPS-105",
+      "request_type": "Meeting room AV fault",
+      "requester": "Aisha Rahman",
+      "department": "Executive Office",
+      "details": "Video conferencing system in Boardroom B shows no audio. Board pre-read session is scheduled for tomorrow morning with two remote directors.",
+      "due_date": "2026-11-16"
+    }
+  ]
+}

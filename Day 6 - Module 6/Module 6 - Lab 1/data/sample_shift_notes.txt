@@ -1,0 +1,7 @@
+Shift: Night, Operations Center
+- 22:10 Backup job for finance server failed. Re-ran at 23:30, succeeded.
+- 23:45 Printer on floor 2 jammed again. Facilities notified, ticket FAC-882 open.
+- 01:20 Vendor portal login is slow. Monitoring, no action yet.
+- 03:00 Badge reader at loading dock offline. Waiting for security vendor callback.
+- 05:40 Weekly patch window confirmed for Saturday 22:00.
+Pending for day shift: follow up on badge reader, check vendor portal ticket, confirm patch notice was sent to all staff.

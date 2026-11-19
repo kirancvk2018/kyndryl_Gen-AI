@@ -1,0 +1,137 @@
+================================================================================
+MODULE 6, LAB 1: LANGCHAIN BASICS (CORPORATE OPERATIONS) - FILE MANIFEST
+================================================================================
+
+Project: Simple LLM App for Routine Corporate Operations
+Version: 2.0
+Status: Ready for trainees
+
+================================================================================
+CORE FILES (required)
+================================================================================
+
+module6_lab1_langchain_basics.ipynb
+   Type: Jupyter notebook
+   Sections: 12 (setup, building blocks, LLM, prompt templates, chains,
+             multi-step chain, output parsing, exercise, best practices,
+             routine-operations patterns, batch ticket triage, summary)
+   Duration: 2-3 hours
+   Functions only: no classes, no Pydantic models
+
+lab1_m6_requirements.txt
+   Python packages: langchain, langchain-openai, openai, python-dotenv
+   Versions: langchain>=1.0.0, langchain-openai>=1.0.0, openai>=1.0.0,
+             python-dotenv>=1.0.0
+   Usage: pip install -r lab1_m6_requirements.txt
+
+.env
+   Your settings and OpenAI API key. Keep private. Do not share or commit.
+   Keys: OPENAI_API_KEY, OPENAI_MODEL (gpt-4o-mini), LLM_TEMPERATURE, MAX_TOKENS
+
+.env_lab1_m6_example
+   Settings template. Copy to .env_lab1_m6 if you want a separate private file.
+
+================================================================================
+SAMPLE DATA (folder data/, used by the notebook)
+================================================================================
+
+data/sample_tickets.json
+   8 office and IT tickets (TKT-101 to TKT-108)
+   Used in: Section 11 batch ticket triage
+
+data/sample_shift_notes.txt
+   Night-shift handover log with pending items for the day shift
+   Used in: Sections 5 and 6 (shift handover summary and next-shift tasks)
+
+data/sample_meeting_notes.txt
+   Weekly operations meeting notes (Facilities, Finance, IT, Procurement)
+   Used in: Section 8 exercise (meeting status email)
+
+================================================================================
+DOCUMENTATION FILES
+================================================================================
+
+MODULE6_LAB1_README.md
+   Full lab guide: installation, sections, concepts, configuration,
+   troubleshooting, verification checklist, instructor notes.
+
+LAB1_M6_QUICKSTART.md
+   Five-minute start: install, add the key, first program, common tasks.
+
+LAB1_M6_MANIFEST.txt (this file)
+   File list and descriptions.
+
+MODULE6_LAB1_DELIVERY_SUMMARY.txt
+   What is in the lab and what changed in version 2.0.
+
+================================================================================
+OUTPUT (created when you run the notebook)
+================================================================================
+
+output/ticket_triage.json
+   Triage result for each ticket: id, team, priority, reason.
+   Created by Section 11.
+
+================================================================================
+FILE DEPENDENCIES
+================================================================================
+
+Essential:
+  - module6_lab1_langchain_basics.ipynb
+  - lab1_m6_requirements.txt
+  - .env (with OPENAI_API_KEY)
+
+Data used by the notebook:
+  - data/sample_tickets.json
+  - data/sample_shift_notes.txt
+  - data/sample_meeting_notes.txt
+
+Reference:
+  - MODULE6_LAB1_README.md
+  - LAB1_M6_QUICKSTART.md
+
+================================================================================
+SETUP CHECKLIST
+================================================================================
+
+  [ ] Python 3.10+ installed
+  [ ] pip install -r lab1_m6_requirements.txt
+  [ ] pip install jupyter
+  [ ] OPENAI_API_KEY set in .env (on one line, no quotes)
+  [ ] jupyter notebook module6_lab1_langchain_basics.ipynb
+  [ ] Run all cells from top to bottom
+
+================================================================================
+TROUBLESHOOTING BY FILE
+================================================================================
+
+If the notebook will not open:
+  -> pip install jupyter
+  -> Check the file is in this folder
+
+If the API key fails (401):
+  -> Check the OPENAI_API_KEY line in .env
+  -> Restart the kernel after editing .env
+
+If the model is not found (404):
+  -> Set OPENAI_MODEL=gpt-4o-mini in .env, then restart the kernel
+
+If sample data will not load:
+  -> Run the notebook from this folder so the file paths resolve
+
+================================================================================
+VERSION HISTORY
+================================================================================
+
+v2.0
+  - Corporate operations use case (replaces the IT incident examples)
+  - Removed the Pydantic requirement and the ITOpsBot class
+  - Model default changed to gpt-4o-mini
+  - Sample data: tickets, shift notes and meeting notes
+
+v1.0 (2024-08-03)
+  - Initial release (IT operations examples)
+
+================================================================================
+END OF MANIFEST
+================================================================================

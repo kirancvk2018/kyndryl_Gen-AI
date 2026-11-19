@@ -1,0 +1,11 @@
+langchain>=1.0.0
+langchain-openai>=1.0.0
+openai>=1.0.0
+# anthropic>=0.7.0  # Anthropic disabled — this lab now runs OpenAI-only
+python-dotenv>=1.0.0
+
+# Note: originally pinned to langchain==0.1.0, but that version (and its
+# numpy<2 dependency) cannot build on newer Python releases (e.g. 3.14) that
+# lack prebuilt numpy wheels for it. Unpinned to the current langchain 1.x
+# line, which splits providers into langchain-openai and moved chains to the
+# LCEL `prompt | llm` pattern instead of the removed LLMChain class.

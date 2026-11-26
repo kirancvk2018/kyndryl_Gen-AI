@@ -1,0 +1,23 @@
+# Module 7 Lab 2: Build a Vector Store and Retriever with LangChain and FAISS
+#
+# Install into the EXISTING Python interpreter (do not create a new virtual environment):
+#   python -m pip install -r requirements.txt
+#
+# LangChain stack reused from Module 7 Lab 1 (langchain==1.3.14).
+# The pinned versions below are the ones verified together in the training interpreter.
+
+# LangChain stack (pinned together for compatibility)
+langchain==1.3.14
+langchain-core==1.5.3
+langchain-community==0.4.2
+langchain-openai==1.4.2
+langchain-text-splitters==1.1.2
+
+# Local vector store (FAISS, CPU build)
+faiss-cpu>=1.7.0
+
+# Reads OPENAI_API_KEY from the .env file
+python-dotenv>=1.0.0
+
+# Jupyter kernel for running the notebook in VS Code (already installed in the training interpreter)
+ipykernel>=6.0.0

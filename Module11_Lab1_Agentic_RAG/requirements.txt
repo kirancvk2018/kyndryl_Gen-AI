@@ -1,0 +1,34 @@
+# Module 11 Lab 1 - Agentic RAG for IT Infrastructure Operations
+#
+# These versions were read from the installed packages in the existing
+# Python 3.10 interpreter (C:\Users\Admin\AppData\Local\Programs\Python\Python310\python.exe).
+# Install into that same interpreter. Do not create a new environment.
+#
+#   python -m pip install -r requirements.txt
+
+# LangChain core packages
+langchain==1.3.14
+langchain-core==1.5.3
+langchain-openai==1.4.2
+langchain-community==0.4.2
+
+# OpenAI SDK (used by langchain-openai)
+openai==2.54.0
+
+# Vector store (local, in memory)
+faiss-cpu==1.14.3
+
+# Excel reading and data handling
+pandas==2.3.3
+openpyxl==3.1.5
+
+# Read the .env file
+python-dotenv==1.2.4
+
+# OpenTelemetry: API, SDK and OTLP HTTP exporter (Jaeger reads OTLP on port 4318)
+opentelemetry-api==1.44.0
+opentelemetry-sdk==1.44.0
+opentelemetry-exporter-otlp-proto-http==1.44.0
+
+# Jupyter kernel so VS Code can run the notebook
+ipykernel==7.3.0

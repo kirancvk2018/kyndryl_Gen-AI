@@ -1,0 +1,20 @@
+# Starts Jaeger (all-in-one, v2) for viewing the lab's traces.
+#
+#   docker compose up -d      start Jaeger
+#   docker compose down       stop Jaeger
+#
+# Jaeger UI:            http://localhost:16686
+# OTLP over HTTP:       http://localhost:4318  (the notebook sends traces here)
+
+services:
+  jaeger:
+    # Official Jaeger v2 image, pinned to a tested tag. Older v1 images are not used.
+    image: cr.jaegertracing.io/jaegertracing/jaeger:2.20.0
+    container_name: it-agent-jaeger
+    environment:
+      # Listen on all container interfaces so the published ports can be reached from Windows.
+      - JAEGER_LISTEN_HOST=0.0.0.0
+    ports:
+      - "16686:16686"   # Jaeger web UI
+      - "4318:4318"     # OTLP over HTTP (trace ingest)
+    restart: unless-stopped

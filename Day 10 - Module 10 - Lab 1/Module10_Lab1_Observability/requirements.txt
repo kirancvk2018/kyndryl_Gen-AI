@@ -1,0 +1,23 @@
+# Module 10 - Lab 1: Observability and Tracing for a RAG Application
+#
+# Install with the Python interpreter you already have (Python 3.10):
+#   python -m pip install -r requirements.txt
+#
+# These exact versions come from the existing Python 3.10 training workspace.
+# They were checked against each other. Do not upgrade them without re-running the notebook.
+
+# LangChain (RAG orchestration) and the OpenAI connector
+langchain-core==1.5.3
+langchain-openai==1.4.2
+openai==2.54.0
+
+# Loads OPENAI_API_KEY from the local .env file
+python-dotenv==1.2.4
+
+# OpenTelemetry: create spans and send them to Jaeger over OTLP
+opentelemetry-api==1.44.0
+opentelemetry-sdk==1.44.0
+opentelemetry-exporter-otlp-proto-grpc==1.44.0
+
+# Lets VS Code / Jupyter run the notebook
+ipykernel==7.3.0

@@ -1,0 +1,15 @@
+# Module 10 - Lab 1: Jaeger trace viewer for local learning
+#
+# Start:  docker compose up -d
+# Stop:   docker compose down
+#
+# Image and ports follow the official Jaeger v2 getting-started guide:
+# https://www.jaegertracing.io/docs/latest/getting-started/
+services:
+  jaeger:
+    image: cr.jaegertracing.io/jaegertracing/jaeger:2.23.0
+    container_name: module10-jaeger
+    ports:
+      - "16686:16686"   # Jaeger UI: open http://localhost:16686 in your browser
+      - "4317:4317"     # OTLP gRPC receiver: the notebook sends traces here
+      - "4318:4318"     # OTLP HTTP receiver: alternative port (not used by the notebook)

@@ -1,0 +1,28 @@
+# Module 8 Lab 2: Nomination Management Agent with Excel Integration (LangChain)
+#
+# Install into the EXISTING Python interpreter (do not create a new virtual environment):
+#   python -m pip install -r requirements.txt
+#
+# LangChain stack reused from Module 7 Lab 1, Module 7 Lab 2 and Module 8 Lab 1 (langchain==1.3.14).
+# The pinned versions below are the ones verified together in the training interpreter.
+
+# LangChain stack (pinned together for compatibility)
+langchain==1.3.14
+langchain-core==1.5.3
+langchain-openai==1.4.2
+
+# Agent API: AgentExecutor and create_tool_calling_agent (in LangChain 1.x they live in langchain-classic)
+langchain-classic==1.0.8
+
+# Excel reading and writing
+pandas>=2.0
+openpyxl>=3.1
+
+# Pydantic validation of nomination records (installed with LangChain, listed for clarity)
+pydantic>=2.7
+
+# Reads OPENAI_API_KEY from the .env file
+python-dotenv>=1.0.0
+
+# Jupyter kernel for running the notebook in VS Code (already installed in the training interpreter)
+ipykernel>=6.0.0

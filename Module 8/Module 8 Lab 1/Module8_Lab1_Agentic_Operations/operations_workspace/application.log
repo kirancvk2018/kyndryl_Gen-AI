@@ -1,0 +1,32 @@
+2026-11-19 08:00:01 INFO     [app.main] Application startup initiated. service=orders-api version=4.8.2
+2026-11-19 08:00:03 INFO     [app.config] Configuration loaded from config/app.yaml
+2026-11-19 08:00:04 INFO     [app.db] Connection pool created. min=5 max=40
+2026-11-19 08:00:05 INFO     [app.http] HTTP listener started on port 8080
+2026-11-19 08:00:05 INFO     [app.main] Application startup complete in 4.2 s
+2026-11-19 08:14:22 INFO     [app.http] GET /api/orders/10231 status=200 duration_ms=84
+2026-11-19 08:16:40 INFO     [app.http] POST /api/orders status=201 duration_ms=212
+2026-11-19 09:05:11 INFO     [app.http] GET /api/inventory/stock status=200 duration_ms=97
+2026-11-19 10:14:52 WARN     [app.http] GET /api/reports/daily status=200 duration_ms=2380 slow_response
+2026-11-19 11:02:09 WARN     [app.auth] Login failed for user jsmith. Invalid credentials (attempt 3 of 5)
+2026-11-19 12:30:44 INFO     [app.http] POST /api/payments status=200 duration_ms=305
+2026-11-19 13:58:40 WARN     [app.db] Slow query detected. table=orders duration_ms=1840
+2026-11-19 14:02:11 ERROR    [app.db] Timeout while acquiring connection from pool after 30000 ms
+2026-11-19 14:02:15 ERROR    [app.http] POST /api/orders status=500 error=DB_CONNECTION_TIMEOUT request_id=7f3a
+2026-11-19 14:02:19 ERROR    [app.http] GET /api/orders/10244 status=500 error=DB_CONNECTION_TIMEOUT request_id=7f3b
+2026-11-19 14:02:26 ERROR    [app.db] Database connectivity failure. host=orders-db-01 port=5432 reason=connection refused
+2026-11-19 14:03:02 ERROR    [app.http] POST /api/payments status=503 error=UPSTREAM_UNAVAILABLE request_id=7f3c
+2026-11-19 14:03:30 WARN     [app.auth] Login failed for user mkumar. Invalid credentials (attempt 1 of 5)
+2026-11-19 14:05:48 CRITICAL [app.db] Connection pool exhausted. active=40 max=40 waiting=112
+2026-11-19 14:06:10 ERROR    [app.http] GET /api/orders/10251 status=500 error=DB_CONNECTION_TIMEOUT request_id=7f3d
+2026-11-19 14:08:21 ERROR    [app.http] GET /api/orders/10262 status=500 error=DB_CONNECTION_TIMEOUT request_id=7f3e
+2026-11-19 14:09:55 CRITICAL [app.health] Health check failed 3 consecutive times. Instance marked UNHEALTHY
+2026-11-19 14:12:37 CRITICAL [app.core] Unhandled exception in order-processing worker: OrderWriteError (transaction rolled back)
+2026-11-19 14:14:03 ERROR    [app.http] POST /api/orders status=500 error=DB_CONNECTION_TIMEOUT request_id=7f3f
+2026-11-19 14:20:00 INFO     [app.main] Shutdown signal received from service manager (svc_ops). Draining connections
+2026-11-19 14:20:12 INFO     [app.main] Application stopped
+2026-11-19 14:21:03 INFO     [app.main] Application startup initiated. service=orders-api version=4.8.2
+2026-11-19 14:21:08 INFO     [app.db] Connection pool created. min=5 max=40
+2026-11-19 14:21:09 INFO     [app.main] Application startup complete in 6.0 s
+2026-11-19 14:23:17 INFO     [app.http] GET /api/orders/10262 status=200 duration_ms=143
+2026-11-19 14:24:02 INFO     [app.http] POST /api/orders status=201 duration_ms=226
+2026-11-19 14:30:15 INFO     [app.health] Health check passed. Instance marked HEALTHY

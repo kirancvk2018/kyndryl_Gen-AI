@@ -1,0 +1,33 @@
+INCIDENT NOTES
+==============
+
+Incident ID:           INC-20261119-001
+Incident summary:      Order API returned HTTP 500 and timeout errors. The application could not
+                       get a database connection from its pool, and the database host refused
+                       connections for a short period. The service was restarted to recover.
+Reported time:         2026-11-19 14:04 (raised by Customer Support through the ticket queue)
+Affected application:  orders-api (Order Management Portal), version 4.8.2
+User impact:           Customers could not place or view orders from about 14:02 to 14:23.
+                       Support also reports that payment attempts failed for a short time
+                       (not yet verified in the payment system).
+
+Initial observations:
+- application.log shows the first connection timeout at 14:02:11 and the first HTTP 500 at 14:02:15.
+- orders-db-01 refused a connection at 14:02:26 (port 5432).
+- The connection pool reached 40 of 40 connections at 14:05:48, with 112 requests waiting.
+- The health check failed 3 times at 14:09:55 and the instance was marked UNHEALTHY.
+- A slow query on the orders table (1840 ms) was logged at 13:58:40, before the incident.
+- server_metrics.csv (14:05 snapshot): app-srv-02 CPU 96.4% and memory 91.7%.
+- The root cause has NOT been confirmed.
+
+Actions already performed:
+- 14:20  orders-api stopped by the service manager (svc_ops) and drained its connections.
+- 14:21  Application started again; connection pool recreated with min=5, max=40.
+- 14:23  First successful API responses after the restart (HTTP 200 and 201).
+- 14:30  Health check passed; instance marked HEALTHY.
+
+Current status:        Service restored at 14:23 and under monitoring.
+                       Root cause is still open. Pending actions:
+                       - DBA review of the orders-db-01 listener and connection limits.
+                       - Review of the slow query on the orders table.
+                       - Review of the pool size (max=40) under peak load.

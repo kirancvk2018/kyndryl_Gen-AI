@@ -1,0 +1,27 @@
+# Module 8 Lab 3: Build a SQL Database Agent using LangChain
+#
+# Install into the EXISTING Python interpreter (do not create a new virtual environment):
+#   python -m pip install -r requirements.txt
+#
+# LangChain versions reused from Module 8 Lab 1 and Module 7 Labs 1 and 2 (langchain==1.3.14).
+# The versions below are the ones verified together in the training interpreter (Python 3.10.11).
+
+# LangChain stack (pinned together for compatibility)
+langchain==1.3.14
+langchain-core==1.5.3
+langchain-openai==1.4.2
+
+# Agent API: create_tool_calling_agent and AgentExecutor (in LangChain 1.x they live in langchain-classic)
+langchain-classic==1.0.8
+
+# Pydantic validates the inputs of every custom tool
+pydantic==2.12.3
+
+# PostgreSQL driver (psycopg 3, binary build so no compiler is needed on Windows)
+psycopg[binary]==3.3.9
+
+# Reads the settings from the .env file (same floor as Module 8 Lab 1; do not downgrade a newer install)
+python-dotenv>=1.0.0
+
+# Jupyter kernel for running the notebook in VS Code (already installed in the training interpreter)
+ipykernel>=6.0.0

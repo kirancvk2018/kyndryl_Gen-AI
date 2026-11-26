@@ -1,0 +1,28 @@
+# Module 8 Lab 1: Agentic IT Operations Assistant with LangChain built-in tools
+#
+# Install into the EXISTING Python interpreter (do not create a new virtual environment):
+#   python -m pip install -r requirements.txt
+#
+# LangChain versions reused from Module 7 Lab 1 and Lab 2 (langchain==1.3.14).
+# The pinned versions below are the ones verified together in the training interpreter.
+
+# LangChain stack (pinned together for compatibility)
+langchain==1.3.14
+langchain-core==1.5.3
+langchain-community==0.4.2
+langchain-openai==1.4.2
+
+# Agent API: create_tool_calling_agent and AgentExecutor (in LangChain 1.x they live in langchain-classic)
+langchain-classic==1.0.8
+
+# PythonREPLTool (in LangChain 1.x it lives in langchain-experimental)
+langchain-experimental==0.4.2
+
+# DuckDuckGo search backend used by DuckDuckGoSearchRun (no API key needed)
+ddgs==9.14.4
+
+# Reads OPENAI_API_KEY from the .env file
+python-dotenv>=1.0.0
+
+# Jupyter kernel for running the notebook in VS Code (already installed in the training interpreter)
+ipykernel>=6.0.0
